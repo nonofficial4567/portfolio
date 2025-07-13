@@ -7,17 +7,28 @@ const TYPING_SPEED = 80;
 
 const Home = () => {
   const [typed, setTyped] = useState('');
+  const [showCursor, setShowCursor] = useState(true);
   const idx = useRef(0);
 
   useEffect(() => {
     setTyped('');
     idx.current = 0;
     const interval = setInterval(() => {
-      setTyped((prev) => prev + TYPING_TEXT[idx.current]);
-      idx.current++;
-      if (idx.current >= TYPING_TEXT.length) clearInterval(interval);
+      if (idx.current < TYPING_TEXT.length) {
+        setTyped((prev) => prev + TYPING_TEXT[idx.current]);
+        idx.current++;
+      } else {
+        clearInterval(interval);
+      }
     }, TYPING_SPEED);
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const cursorInterval = setInterval(() => {
+      setShowCursor(prev => !prev);
+    }, 500);
+    return () => clearInterval(cursorInterval);
   }, []);
 
   return (
@@ -40,7 +51,7 @@ const Home = () => {
             <div className="typing-section">
               <span className="neon-green-text typing-text">
                 {typed}
-                <span className="cursor" />
+                <span className={`cursor ${showCursor ? 'visible' : 'hidden'}`} />
               </span>
             </div>
           </div>

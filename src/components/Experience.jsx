@@ -42,9 +42,9 @@ const achievementStyles = [
 
 const Experience = () => {
   return (
-    <div className="experience-container" style={{ textAlign: 'center' }}>
-      <div style={sectionHeadingStyle}>&lt;Experience/&gt;</div>
-      <div style={experienceCardStyle}>
+    <div className="experience-container" style={{ textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '40px 20px', boxSizing: 'border-box' }}>
+      <div style={sectionHeadingStyle}>{"Experience"}</div>
+      <div style={{...experienceCardStyle, width: '100%', maxWidth: '700px', boxSizing: 'border-box'}}>
         <h3 className="neon-blue-text" style={{ display: 'flex', justifyContent: 'space-between' }}>
           <span>Research and Development</span>
           <span style={{ fontSize: '0.8rem', color: '#39ff14' }}>June 2024 - July 2024</span>
@@ -56,20 +56,21 @@ const Experience = () => {
           <li>Also managed their recent database as a side task</li>
         </ul>
       </div>
-      <div style={{ display: 'flex', gap: '40px', justifyContent: 'center', marginTop: '40px', flexWrap: 'wrap' }}>
+      <div style={{ display: 'flex', gap: '40px', justifyContent: 'center', marginTop: '40px', flexWrap: 'wrap', width: '100%', maxWidth: '1200px', boxSizing: 'border-box' }}>
         {/* Patent Published */}
         <div style={sectionHeadingStyle}>
-        &lt;Awards/&gt;
+        {"Awards"}
       </div>
         <div
           className="card"
           style={{
             ...achievementStyles[0],
             flex: '1 1 200px',
-            minWidth: '240px',
+            minWidth: '200px',
             textAlign: 'center',
             borderRadius: '16px',
             padding: '24px 18px',
+            boxSizing: 'border-box'
           }}
         >
           
@@ -82,10 +83,11 @@ const Experience = () => {
           style={{
             ...achievementStyles[1],
             flex: '1 1 200px',
-            minWidth: '240px',
+            minWidth: '200px',
             textAlign: 'center',
             borderRadius: '16px',
             padding: '24px 18px',
+            boxSizing: 'border-box'
           }}
         >
           <h4 style={{ color: achievementStyles[1].titleColor, fontWeight: 700, fontSize: '1.2rem', marginBottom: '10px' }}>Dean's List</h4>
@@ -97,10 +99,11 @@ const Experience = () => {
           style={{
             ...achievementStyles[2],
             flex: '1 1 200px',
-            minWidth: '240px',
+            minWidth: '200px',
             textAlign: 'center',
             borderRadius: '16px',
             padding: '24px 18px',
+            boxSizing: 'border-box'
           }}
         >
           <h4 style={{ color: achievementStyles[2].titleColor, fontWeight: 700, fontSize: '1.2rem', marginBottom: '10px' }}>Excellence Award</h4>

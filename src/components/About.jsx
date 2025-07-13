@@ -16,24 +16,27 @@ export const sectionHeadingStyle = {
 
 const About = () => {
   return (
-    <div style={{ paddingTop: '0px' }}>
+    <div style={{ paddingTop: '0px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 20px' }}>
       {/* About Heading */}
       <div style={sectionHeadingStyle}>
-        &lt;About Me/&gt;
+        {"About Me"}
       </div>
       <div className="about-container" style={{
         display: 'flex',
         gap: '40px',
         flexWrap: 'wrap',
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         alignItems: 'flex-start',
         marginTop: '0',
-        marginLeft: '10px'
+        marginLeft: '0',
+        width: '100%',
+        maxWidth: '1200px',
+        boxSizing: 'border-box'
       }}>
         {/* Left big card */}
         <div style={{
           flex: '1 1 600px',
-          minWidth: '380px',
+          minWidth: '300px',
            background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
           border: '2px solid #00ffff',
           borderRadius: '16px',
@@ -41,7 +44,8 @@ const About = () => {
           padding: '32px 32px 24px 32px',
           marginBottom: '20px',
           color: '#fff',
-          position: 'relative'
+          position: 'relative',
+          boxSizing: 'border-box'
         }}>
           <div style={{
             fontFamily: "'Share Tech Mono', monospace",
@@ -110,10 +114,11 @@ const About = () => {
         {/* Right two stacked cards */}
         <div style={{
           flex: '1 1 400px',
-          minWidth: '340px',
+          minWidth: '300px',
           display: 'flex',
           flexDirection: 'column',
-          gap: '24px'
+          gap: '24px',
+          boxSizing: 'border-box'
         }}>
           <div style={{
             background: 'linear-gradient(120deg, #002a1a 60%, #003300 80%, #00ff99 120%)',

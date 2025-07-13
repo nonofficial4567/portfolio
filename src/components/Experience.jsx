@@ -43,7 +43,7 @@ const achievementStyles = [
 const Experience = () => {
   return (
     <div className="experience-container" style={{ textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <div style={sectionHeadingStyle}>&lt;Experience/&gt;</div>
+      <div style={sectionHeadingStyle}>{"Experience"}</div>
       <div style={{...experienceCardStyle, width: '100%', maxWidth: '700px'}}>
         <h3 className="neon-blue-text" style={{ display: 'flex', justifyContent: 'space-between' }}>
           <span>Research and Development</span>
@@ -59,7 +59,7 @@ const Experience = () => {
       <div style={{ display: 'flex', gap: '40px', justifyContent: 'center', marginTop: '40px', flexWrap: 'wrap' }}>
         {/* Patent Published */}
         <div style={sectionHeadingStyle}>
-        &lt;Awards/&gt;
+        {"Awards"}
       </div>
         <div
           className="card"

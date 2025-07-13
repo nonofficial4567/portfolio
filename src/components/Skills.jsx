@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div className="skills-container" style={{ textAlign: 'center', minHeight: '100vh', padding: '40px 0', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div style={sectionHeadingStyle}>
-              &lt;Skills/&gt;
+              {"Skills"}
       </div>
       <div
         style={{
@@ -81,7 +81,7 @@ const Skills = () => {
         </div>
       </div>
       <div style={sectionHeadingStyle}>
-              &lt;Certificates & Courses/&gt;
+              {"Certificates & Courses"}
       </div>
       <div
         style={{

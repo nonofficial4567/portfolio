@@ -19,7 +19,7 @@ const Projects = () => {
   return (
     <div className="projects-container" style={{ minHeight: '100vh', padding: '40px 0', textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div style={sectionHeadingStyle}>
-        &lt;Projects/&gt;
+        {"Projects"}
       </div>
       <div
         style={{

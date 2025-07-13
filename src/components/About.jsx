@@ -19,7 +19,7 @@ const About = () => {
     <div style={{ paddingTop: '0px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       {/* About Heading */}
       <div style={sectionHeadingStyle}>
-        &lt;About Me/&gt;
+        {"About Me"}
       </div>
       <div className="about-container" style={{
         display: 'flex',

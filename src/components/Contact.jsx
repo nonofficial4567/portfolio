@@ -19,7 +19,7 @@ const Contact = () => {
       }}
     >
       <div style={sectionHeadingStyle}>
-        <Contact/>
+        {"Contact"}
       </div>
       <div style={{
         display: 'flex',

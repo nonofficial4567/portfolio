@@ -787,6 +787,14 @@ footer a:hover {
   section {
     padding: 30px 10px;
   }
+
+  /* Responsibilities timeline mobile styles */
+  .responsibilities-section .card {
+    width: 90% !important;
+    max-width: 90% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
 
 /* Tablet Responsive */

@@ -192,18 +192,6 @@ const Responsibilities = () => {
           );
         })}
       </div>
-      
-      {/* Mobile responsive styles */}
-      <style jsx>{`
-        @media (max-width: 768px) {
-          .card {
-            width: 90% !important;
-            max-width: 90% !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-          }
-        }
-      `}</style>
     </div>
   );
 };

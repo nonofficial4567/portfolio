@@ -30,7 +30,7 @@ const Contact = () => {
         width: '100%',
         maxWidth: '1200px'
       }}
-    >
+      >
       {/* Left: Send Message Card */}
       <div
         style={{
@@ -165,6 +165,7 @@ Punjab, India
           </TerminalWindow>
         </div>
       </div>
+    </div>
     </div>
   );
 };

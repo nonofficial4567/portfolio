@@ -32,6 +32,7 @@ const timelineData = [
 const Responsibilities = () => {
   return (
     <div
+     className="responsibilities-section"
       style={{
         width: '100%',
         minHeight: '100vh',
@@ -59,7 +60,9 @@ const Responsibilities = () => {
         Responsibilities
       </h2>
       
-      <div
+     {/* Desktop Timeline Layout */}
+     <div
+       className="desktop-timeline"
         style={{
           position: 'relative',
           width: '100%',
@@ -195,6 +198,92 @@ const Responsibilities = () => {
           );
         })}
       </div>
+
+     {/* Mobile Card Layout */}
+     <div className="mobile-timeline" style={{ display: 'none' }}>
+       {timelineData.map((item, idx) => (
+         <div
+           key={item.title}
+           className="mobile-timeline-card"
+           style={{
+             background: item.bg,
+             border: `2px solid ${item.border}`,
+             borderRadius: '16px',
+             boxShadow: `0 0 14px ${item.border}40`,
+             padding: '24px',
+             marginBottom: '24px',
+             color: '#fff',
+             textAlign: 'left',
+             width: '100%',
+             maxWidth: '100%',
+             boxSizing: 'border-box',
+             position: 'relative'
+           }}
+         >
+           {/* Mobile icon badge */}
+           <div
+             style={{
+               position: 'absolute',
+               top: '-12px',
+               left: '20px',
+               width: '40px',
+               height: '40px',
+               background: item.bg,
+               border: `3px solid ${item.border}`,
+               borderRadius: '50%',
+               boxShadow: `0 0 10px ${item.border}`,
+               display: 'flex',
+               alignItems: 'center',
+               justifyContent: 'center',
+               fontSize: '1.2rem',
+               color: item.color,
+             }}
+           >
+             {item.icon}
+           </div>
+           
+           <div style={{ marginTop: '16px' }}>
+             <h3
+               style={{
+                 fontSize: '1.3rem',
+                 marginBottom: '8px',
+                 color: item.color,
+                 textShadow: `0 0 8px ${item.color}`,
+                 fontWeight: 700,
+               }}
+             >
+               {item.title}
+             </h3>
+             <div style={{ 
+               color: item.color, 
+               fontWeight: 600, 
+               fontSize: '0.9rem',
+               marginBottom: '8px' 
+             }}>
+               {item.date}
+             </div>
+             <div style={{ 
+               fontWeight: 700, 
+               margin: '8px 0 15px 0', 
+               color: '#fff',
+               fontSize: '1.1rem' 
+             }}>
+               {item.org}
+             </div>
+             <ul style={{ 
+               marginLeft: '16px', 
+               marginBottom: 0,
+               lineHeight: '1.6',
+               fontSize: '0.95rem'
+             }}>
+               {item.details.map((d, i) => (
+                 <li key={i} style={{ marginBottom: '6px' }}>{d}</li>
+               ))}
+             </ul>
+           </div>
+         </div>
+       ))}
+     </div>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { sectionHeadingStyle } from './About';
 
 const Skills = () => {
   return (
-    <div className="skills-container" style={{ textAlign: 'center', minHeight: '100vh', padding: '40px 0' }}>
+    <div className="skills-container" style={{ textAlign: 'center', minHeight: '100vh', padding: '40px 0', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div style={sectionHeadingStyle}>
               &lt;Skills/&gt;
       </div>
@@ -14,7 +14,9 @@ const Skills = () => {
           gap: '32px',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          marginBottom: '48px'
+          marginBottom: '48px',
+          width: '100%',
+          maxWidth: '1200px'
         }}
       >
         <div

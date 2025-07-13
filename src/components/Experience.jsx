@@ -42,9 +42,9 @@ const achievementStyles = [
 
 const Experience = () => {
   return (
-    <div className="experience-container" style={{ textAlign: 'center' }}>
+    <div className="experience-container" style={{ textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div style={sectionHeadingStyle}>&lt;Experience/&gt;</div>
-      <div style={experienceCardStyle}>
+      <div style={{...experienceCardStyle, width: '100%', maxWidth: '700px'}}>
         <h3 className="neon-blue-text" style={{ display: 'flex', justifyContent: 'space-between' }}>
           <span>Research and Development</span>
           <span style={{ fontSize: '0.8rem', color: '#39ff14' }}>June 2024 - July 2024</span>

@@ -16,7 +16,7 @@ export const sectionHeadingStyle = {
 
 const About = () => {
   return (
-    <div style={{ paddingTop: '0px' }}>
+    <div style={{ paddingTop: '0px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       {/* About Heading */}
       <div style={sectionHeadingStyle}>
         &lt;About Me/&gt;
@@ -25,10 +25,12 @@ const About = () => {
         display: 'flex',
         gap: '40px',
         flexWrap: 'wrap',
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         alignItems: 'flex-start',
         marginTop: '0',
-        marginLeft: '10px'
+        marginLeft: '0',
+        width: '100%',
+        maxWidth: '1200px'
       }}>
         {/* Left big card */}
         <div style={{

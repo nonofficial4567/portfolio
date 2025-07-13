@@ -10,18 +10,27 @@ const Contact = () => {
       style={{
         minHeight: '100vh',
         display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        padding: '40px 20px',
+        position: 'relative',
+        zIndex: 1,
+        width: '100%'
+      }}
+    >
+      <div style={sectionHeadingStyle}>
+        <Contact/>
+      </div>
+      <div style={{
+        display: 'flex',
         gap: '40px',
         flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'flex-start',
-        padding: '40px 0',
-        position: 'relative',
-        zIndex: 1,
+        width: '100%',
+        maxWidth: '1200px'
       }}
     >
-      <div style={sectionHeadingStyle}>
-              &lt;Contact/&gt;
-            </div>
       {/* Left: Send Message Card */}
       <div
         style={{

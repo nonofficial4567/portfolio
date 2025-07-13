@@ -17,7 +17,7 @@ const cardStyle = {
 
 const Projects = () => {
   return (
-    <div className="projects-container" style={{ minHeight: '100vh', padding: '40px 0', textAlign: 'center' }}>
+    <div className="projects-container" style={{ minHeight: '100vh', padding: '40px 0', textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div style={sectionHeadingStyle}>
         &lt;Projects/&gt;
       </div>
@@ -29,7 +29,9 @@ const Projects = () => {
           justifyContent: 'center',
           alignItems: 'flex-start',
           marginTop: '0',
-          marginLeft: '0'
+          marginLeft: '0',
+          width: '100%',
+          maxWidth: '1200px'
         }}
       >
         {/* Left Project Card */}

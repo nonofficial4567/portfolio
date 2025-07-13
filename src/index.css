@@ -741,6 +741,117 @@ footer a:hover {
     padding: 40px 15px;
     min-height: auto;
   }
+
+  /* About Section Mobile */
+  .about-container {
+    flex-direction: column !important;
+    gap: 20px !important;
+    padding: 0 10px;
+  }
+
+  .about-container > div {
+    flex: none !important;
+    min-width: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Skills Section Mobile */
+  .skills-container > div:first-of-type {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  .skills-container .card {
+    flex: none !important;
+    min-width: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .skills-container > div:last-of-type {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+
+  /* Projects Section Mobile */
+  .projects-container > div {
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+  }
+
+  .projects-container .card,
+  .projects-container > div > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  /* Experience Section Mobile */
+  .experience-container > div:first-of-type {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .experience-container > div:last-of-type {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+
+  .experience-container .card {
+    flex: none !important;
+    min-width: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Contact Section Mobile */
+  .contact-container > div:last-of-type {
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+  }
+
+  .contact-container .card,
+  .contact-container > div:last-of-type > div {
+    flex: none !important;
+    min-width: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Responsibilities Timeline Mobile */
+  .responsibilities-section .card {
+    width: 90% !important;
+    max-width: 90% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Tech badges mobile */
+  .tech-badge {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    margin: 2px 4px 2px 0;
+  }
+
+  /* Typography adjustments */
+  h1, h2, h3 {
+    font-size: 1.8rem !important;
+  }
+
+  h4 {
+    font-size: 1.2rem !important;
+  }
+
+  p, li {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -788,12 +899,34 @@ footer a:hover {
     padding: 30px 10px;
   }
 
-  /* Responsibilities timeline mobile styles */
-  .responsibilities-section .card {
-    width: 90% !important;
-    max-width: 90% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  /* Extra small screens */
+  .main-title {
+    font-size: 1.8rem !important;
+  }
+
+  .typing-text {
+    font-size: 1.2rem !important;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem !important;
+  }
+
+  h4 {
+    font-size: 1.1rem !important;
+  }
+
+  p, li {
+    font-size: 0.9rem !important;
+  }
+
+  .card {
+    padding: 15px !important;
+  }
+
+  .tech-badge {
+    font-size: 0.7rem;
+    padding: 2px 6px;
   }
 }
 

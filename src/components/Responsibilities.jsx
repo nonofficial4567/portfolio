@@ -40,6 +40,7 @@ const Responsibilities = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        boxSizing: 'border-box'
       }}
     >
       <h2
@@ -64,6 +65,7 @@ const Responsibilities = () => {
           width: '100%',
           maxWidth: '1000px',
           margin: '0 auto',
+          boxSizing: 'border-box'
         }}
       >
         {/* Timeline vertical line - centered */}
@@ -130,7 +132,7 @@ const Responsibilities = () => {
                   borderRadius: '18px',
                   boxShadow: `0 0 14px ${item.border}a0`,
                   padding: '28px',
-                  width: '420px',
+                  width: '400px',
                   maxWidth: '45%',
                   color: '#fff',
                   textAlign: 'left',
@@ -138,6 +140,7 @@ const Responsibilities = () => {
                   cursor: 'pointer',
                   marginLeft: isLeft ? '0' : '60px',
                   marginRight: isLeft ? '60px' : '0',
+                  boxSizing: 'border-box'
                 }}
                 onMouseEnter={(e) => {
                   e.target.style.transform = 'translateY(-5px)';

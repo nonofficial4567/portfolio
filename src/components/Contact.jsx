@@ -15,7 +15,8 @@ const Contact = () => {
         padding: '40px 20px',
         position: 'relative',
         zIndex: 1,
-        width: '100%'
+        width: '100%',
+        boxSizing: 'border-box'
       }}
     >
       <div style={sectionHeadingStyle}>
@@ -28,14 +29,15 @@ const Contact = () => {
         justifyContent: 'center',
         alignItems: 'flex-start',
         width: '100%',
-        maxWidth: '1200px'
+        maxWidth: '1200px',
+        boxSizing: 'border-box'
       }}
       >
       {/* Left: Send Message Card */}
       <div
         style={{
           flex: '1 1 420px',
-          minWidth: '340px',
+          minWidth: '300px',
           maxWidth: '500px',
           background: 'rgba(0, 20, 40, 0.95)',
           border: '2px solid #00ffff',
@@ -48,6 +50,7 @@ const Contact = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'stretch',
+          boxSizing: 'border-box'
         }}
       >
         <h2
@@ -80,11 +83,12 @@ const Contact = () => {
       <div
         style={{
           flex: '1 1 420px',
-          minWidth: '340px',
+          minWidth: '300px',
           maxWidth: '500px',
           display: 'flex',
           flexDirection: 'column',
           gap: '24px',
+          boxSizing: 'border-box'
         }}
       >
         {/* Get in Touch Card */}

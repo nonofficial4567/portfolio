@@ -2,8 +2,8 @@ import React from 'react';
 import { sectionHeadingStyle } from './About';
 
 const cardStyle = {
-  width: '550px',
-  height: '520px',
+  maxWidth: '550px',
+  minHeight: '520px',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'flex-start',
@@ -12,12 +12,13 @@ const cardStyle = {
   color: '#fff',
   position: 'relative',
   textAlign: 'left',
-  boxSizing: 'border-box'
+  boxSizing: 'border-box',
+  width: '100%'
 };
 
 const Projects = () => {
   return (
-    <div className="projects-container" style={{ minHeight: '100vh', padding: '40px 0', textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div className="projects-container" style={{ minHeight: '100vh', padding: '40px 20px', textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
       <div style={sectionHeadingStyle}>
         {"Projects"}
       </div>
@@ -31,13 +32,16 @@ const Projects = () => {
           marginTop: '0',
           marginLeft: '0',
           width: '100%',
-          maxWidth: '1200px'
+          maxWidth: '1200px',
+          boxSizing: 'border-box'
         }}
       >
         {/* Left Project Card */}
         <div
           style={{
             ...cardStyle,
+            flex: '1 1 500px',
+            minWidth: '300px',
             background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
             border: '2px solid #00ffff',
             boxShadow: '0 0 14px #00ffff33',
@@ -94,6 +98,8 @@ const Projects = () => {
         <div
           style={{
             ...cardStyle,
+            flex: '1 1 500px',
+            minWidth: '300px',
             background: 'linear-gradient(120deg, #1a002a 60%, #330033 80%, #ff00ff 120%)',
             border: '2px solid #ff00ff',
             boxShadow: '0 0 14px #ff00ff33',

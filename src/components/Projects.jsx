@@ -3,7 +3,7 @@ import { sectionHeadingStyle } from './About';
 
 const cardStyle = {
   maxWidth: '550px',
-  minHeight: '520px',
+  minHeight: 'auto',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'flex-start',

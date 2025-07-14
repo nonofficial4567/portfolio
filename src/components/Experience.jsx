@@ -335,6 +335,7 @@ const Experience = () => {
 						boxSizing: 'border-box',
 					}}
 				>
+					<div style={{ fontSize: '2.5rem', marginBottom: '12px' }}>🏆</div>
 					<h4
 						style={{
 							color: achievementStyles[0].titleColor,
@@ -362,6 +363,7 @@ const Experience = () => {
 						boxSizing: 'border-box',
 					}}
 				>
+					<div style={{ fontSize: '2.5rem', marginBottom: '12px' }}>⭐</div>
 					<h4
 						style={{
 							color: achievementStyles[1].titleColor,
@@ -389,6 +391,7 @@ const Experience = () => {
 						boxSizing: 'border-box',
 					}}
 				>
+					<div style={{ fontSize: '2.5rem', marginBottom: '12px' }}>🏅</div>
 					<h4
 						style={{
 							color: achievementStyles[2].titleColor,

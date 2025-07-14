@@ -844,42 +844,7 @@ footer a:hover {
     box-sizing: border-box;
   }
 
-  /* Projects Section Mobile */
-  .projects-container > div {
-    flex-direction: column !important;
-    gap: 15px !important;
-    align-items: center !important;
-    width: 100%;
-    padding: 0 8px;
-    box-sizing: border-box;
-  }
-
-  .projects-container .card,
-  .projects-container > div > div {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    min-height: auto !important;
-    box-sizing: border-box;
-    padding: 16px 12px !important;
-  }
-
-  /* Force single column layout on mobile for projects */
-  .projects-container > div:first-of-type {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100%;
-    padding: 0 8px;
-    box-sizing: border-box;
-  }
-
-  .projects-container > div:first-of-type > div {
-    width: 100% !important;
-    max-width: 100% !important;
-    flex: none !important;
-    box-sizing: border-box;
-  }
+  /* Projects Section Mobile - only apply to very small screens */
 
   /* Experience Section Mobile */
   .experience-container > div:first-of-type {
@@ -1039,6 +1004,42 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+  /* Projects Section Mobile - single column for very small screens */
+  .projects-container > div {
+    flex-direction: column !important;
+    gap: 15px !important;
+    align-items: center !important;
+    width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  .projects-container .card,
+  .projects-container > div > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    box-sizing: border-box;
+    padding: 14px 10px !important;
+  }
+
+  .projects-container > div:first-of-type {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  .projects-container > div:first-of-type > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+    box-sizing: border-box;
+  }
+
   .navbar {
     padding: 8px 12px;
     height: 55px;

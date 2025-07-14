@@ -33,7 +33,7 @@ a:hover {
 }
 
 section {
-  padding: 5px 20px;
+  padding: 5px 10px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -120,7 +120,7 @@ button svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  padding: 10px 20px;
   z-index: 1000;
   box-shadow:
     0 0 10px var(--neon-blue),
@@ -324,7 +324,7 @@ button svg {
   margin: 0;
   letterSpacing: 3px;
   lineHeight: 1.05;
-  textAlign: left;
+  textAlign: 'left';
   textShadow: 0 0 32px #00ffff, 0 0 80px #00ffff, 0 0 120px #00ffff;
   fontWeight: 900;
   fontFamily: 'Orbitron, "Segoe UI", Arial, sans-serif';
@@ -669,7 +669,7 @@ footer a:hover {
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px 20px;
+    padding: 10px 10px;
     height: 60px;
     box-sizing: border-box;
   }
@@ -691,7 +691,7 @@ footer a:hover {
   }
 
   .home-section {
-    padding: 80px 15px 20px;
+    padding: 80px 10px 20px;
     min-height: calc(100vh - 60px);
   }
 
@@ -705,12 +705,13 @@ footer a:hover {
 
   .home-left {
     align-items: center;
-    text-align: center;
+    text-align: left;
     max-width: 100%;
     width: 100%;
   }
 
   .home-right {
+    display: none;
     margin-top: 0;
     max-width: 100%;
     width: 100%;
@@ -718,14 +719,14 @@ footer a:hover {
 
   .main-title {
     font-size: 2.8rem;
-    text-align: center;
+    text-align: left;
     line-height: 1.1;
     margin: 0;
     padding: 0;
   }
 
   .name-card {
-    text-align: center;
+    text-align: left;
     width: 100%;
     max-width: 100%;
     margin-bottom: 15px;
@@ -733,17 +734,17 @@ footer a:hover {
   }
 
   .description {
-    text-align: center;
+    text-align: left;
     font-size: 1rem;
     margin: 15px 0;
-    padding: 0 10px;
+    padding: 0;
   }
 
   .button-section {
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 20px;
     width: 100%;
-    padding: 0 10px;
+    padding: 0;
   }
 
   .btn-primary,
@@ -754,7 +755,7 @@ footer a:hover {
   }
 
   .social-icons {
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 30px;
   }
 
@@ -765,7 +766,7 @@ footer a:hover {
   }
 
   section {
-    padding: 10px 15px;
+    padding: 10px 10px;
     min-height: auto;
     width: 100%;
     box-sizing: border-box;
@@ -775,7 +776,7 @@ footer a:hover {
   .about-container {
     flex-direction: column !important;
     gap: 20px !important;
-    padding: 0 15px;
+    padding: 0 10px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -793,7 +794,7 @@ footer a:hover {
     flex-direction: column !important;
     gap: 20px !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
@@ -810,7 +811,7 @@ footer a:hover {
     flex-direction: column !important;
     gap: 15px !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
@@ -820,7 +821,7 @@ footer a:hover {
     gap: 20px !important;
     align-items: center !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
@@ -839,7 +840,7 @@ footer a:hover {
     flex-direction: column !important;
     align-items: center !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
@@ -855,7 +856,7 @@ footer a:hover {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
-    padding: 0 15px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
@@ -863,7 +864,7 @@ footer a:hover {
     flex-direction: column !important;
     gap: 15px !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
@@ -881,7 +882,7 @@ footer a:hover {
     gap: 20px !important;
     align-items: center !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
@@ -896,7 +897,7 @@ footer a:hover {
 
  /* Experience Timeline Mobile */
  .experience-container .desktop-timeline {
-   display: block;
+   display: block !important;
  }
  
  .experience-container .mobile-timeline {
@@ -905,13 +906,13 @@ footer a:hover {
  
  @media (max-width: 768px) {
    .experience-container .desktop-timeline {
-     display: none !important;
+     display: block !important;
    }
    
    .experience-container .mobile-timeline {
-     display: block !important;
+     display: none !important;
      width: 100%;
-     padding: 0 15px;
+     padding: 0 10px;
      box-sizing: border-box;
    }
    
@@ -966,14 +967,14 @@ footer a:hover {
   /* Fix section headings spacing */
   .section-heading {
     margin: 20px 0 30px 0 !important;
-    padding: 0 15px !important;
-    text-align: center !important;
+    padding: 0 10px !important;
+    text-align: left !important;
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 8px 15px;
+    padding: 8px 10px;
     height: 55px;
   }
 
@@ -982,7 +983,7 @@ footer a:hover {
   }
 
   .home-section {
-    padding: 70px 10px 20px;
+    padding: 70px 5px 20px;
   }
 
   .main-title {
@@ -1027,7 +1028,7 @@ footer a:hover {
 
 
   section {
-    padding: 10px;
+    padding: 10px 5px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -1070,7 +1071,7 @@ footer a:hover {
 
   /* Awards section spacing fix */
   .awards-container {
-    padding: 0 10px !important;
+    padding: 0 5px !important;
     width: 100% !important;
     box-sizing: border-box !important;
   }
@@ -1093,7 +1094,7 @@ footer a:hover {
 @media (max-width: 1024px) and (min-width: 769px) {
   .home-container {
     gap: 60px;
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .main-title {
@@ -1105,7 +1106,7 @@ footer a:hover {
   }
 
   section {
-    padding: 20px;
+    padding: 20px 15px;
     max-width: 100%;
   }
 }

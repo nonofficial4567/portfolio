@@ -42,7 +42,7 @@ const Home = () => {
         <div className="home-left">
           <div className="name-section">
             <div className="name-card">
-              <h1 className="neon-text main-title">
+              <h1 className="neon-text main-title" style={{ textAlign: 'left' }}>
                 ADITYA<br />AGGARWAL
               </h1>
               {/* Subtle glow border effect */}

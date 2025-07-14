@@ -8,17 +8,22 @@ const Skills = () => {
     <style>
       @media (max-width: 769px) {
         .certificate-card {
-          flex: 1 1 calc(50% - 10px) !important;
-          min-width: 250px !important;
+          flex: 1 1 calc(50% - 8px) !important;
+          min-width: 140px !important;
+          max-width: calc(50% - 8px) !important;
+        }
+        .certificates-grid {
+          gap: 8px !important;
         }
       }
       @media (max-width: 580px) {
         .certificate-card {
-          flex: 1 1 calc(50% - 8px) !important;
-          min-width: 140px !important;
+          flex: 1 1 calc(50% - 6px) !important;
+          min-width: 120px !important;
+          max-width: calc(50% - 6px) !important;
         }
         .certificates-grid {
-          gap: 8px !important;
+          gap: 6px !important;
         }
       }
     </style>
@@ -112,7 +117,7 @@ const Skills = () => {
       <div
         style={{
           display: 'flex',
-          gap: '15px',
+          gap: '12px',
           flexWrap: 'wrap',
           justifyContent: 'center',
           marginTop: '10px',
@@ -125,13 +130,13 @@ const Skills = () => {
         <div
           className="card neon-card certificate-card"
           style={{
-            flex: '1 1 calc(33.333% - 10px)',
+            flex: '1 1 calc(33.333% - 8px)',
             minWidth: '280px',
             background: 'linear-gradient(120deg, #331a00 60%, #663300 80%, #ff7b00 120%)',            
             borderRadius: '18px',
             boxShadow: '0 0 14px #ff7b0055',
             border: '2px solid #ff7b00',
-            padding: '0 14px 14px',
+            padding: '8px 12px 12px',
             boxSizing: 'border-box',
             textAlign: 'left'
           }}
@@ -144,14 +149,14 @@ const Skills = () => {
         <div
           className="card neon-card certificate-card"
           style={{
-            flex: '1 1 calc(33.333% - 10px)',
+            flex: '1 1 calc(33.333% - 8px)',
             minWidth: '280px',
             background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
 
             borderRadius: '18px',
             boxShadow: '0 0 14px #00f0ff55',
             border: '2px solid #00f0ff',
-            padding: '0 14px 14px',
+            padding: '8px 12px 12px',
             boxSizing: 'border-box',
             textAlign: 'left'
           }}
@@ -164,14 +169,14 @@ const Skills = () => {
         <div
           className="card neon-card certificate-card"
           style={{
-            flex: '1 1 calc(33.333% - 10px)',
+            flex: '1 1 calc(33.333% - 8px)',
             minWidth: '280px',
             background: 'linear-gradient(120deg, #002a1a 60%, #003300 80%, #00ff99 120%)',
 
             borderRadius: '18px',
             boxShadow: '0 0 14px #00ffb355',
             border: '2px solid #00ffb3',
-            padding: '0 14px 14px',
+            padding: '8px 12px 12px',
             boxSizing: 'border-box',
             textAlign: 'left'
           }}
@@ -184,13 +189,13 @@ const Skills = () => {
         <div
           className="card neon-card certificate-card"
           style={{
-            flex: '1 1 calc(33.333% - 10px)',
+            flex: '1 1 calc(33.333% - 8px)',
             minWidth: '280px',
             background: 'linear-gradient(120deg, #1a002a 60%, #330033 80%, #ff00ff 120%)',
             borderRadius: '18px',
             boxShadow: '0 0 14px #ff00ff55',
             border: '2px solid #ff00ff',
-            padding: '0 14px 14px',
+            padding: '8px 12px 12px',
             boxSizing: 'border-box',
             textAlign: 'left'
           }}
@@ -203,13 +208,13 @@ const Skills = () => {
         <div
           className="card neon-card certificate-card"
           style={{
-            flex: '1 1 calc(33.333% - 10px)',
+            flex: '1 1 calc(33.333% - 8px)',
             minWidth: '280px',
             background: 'linear-gradient(120deg, #331a00 60%, #663300 80%, #ff7b00 120%)',            
             borderRadius: '18px',
             boxShadow: '0 0 14px #ff7b0055',
             border: '2px solid #ff7b00',
-            padding: '0 14px 14px',
+            padding: '8px 12px 12px',
             boxSizing: 'border-box',
             textAlign: 'left'
           }}
@@ -222,14 +227,14 @@ const Skills = () => {
         <div
           className="card neon-card certificate-card"
           style={{
-            flex: '1 1 calc(33.333% - 10px)',
+            flex: '1 1 calc(33.333% - 8px)',
             minWidth: '280px',
             background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
 
             borderRadius: '18px',
             boxShadow: '0 0 14px #00f0ff55',
             border: '2px solid #00f0ff',
-            padding: '0 14px 14px',
+            padding: '8px 12px 12px',
             boxSizing: 'border-box',
             textAlign: 'left'
           }}

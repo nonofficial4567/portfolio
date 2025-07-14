@@ -776,6 +776,30 @@ footer a:hover {
 
   /* About Section Mobile */
   .about-container {
+    flex-direction: row-reverse !important;
+    gap: 15px !important;
+    padding: 0 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .about-container > div {
+    flex: 1 1 300px !important;
+    min-width: auto !important;
+    width: auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .about-container .card {
+    padding: 16px 12px !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+@media (max-width: 580px) {
+  /* About Section Mobile - Single Column for very small screens */
+  .about-container {
     flex-direction: column !important;
     gap: 15px !important;
     padding: 0 8px;
@@ -790,11 +814,9 @@ footer a:hover {
     max-width: 100% !important;
     box-sizing: border-box;
   }
+}
 
-  .about-container .card {
-    padding: 16px 12px !important;
-    margin-bottom: 15px !important;
-  }
+@media (max-width: 768px) {
   /* Skills Section Mobile */
   .skills-container > div:first-of-type {
     flex-direction: column !important;
@@ -874,27 +896,27 @@ footer a:hover {
   }
 
   .experience-container .desktop-timeline .card {
-    width: calc(100% - 60px) !important;
-    max-width: calc(100% - 60px) !important;
-    padding: 10px 12px !important;
-    margin-left: 30px !important;
-    margin-right: 0 !important;
+    width: calc(100% - 80px) !important;
+    max-width: calc(100% - 80px) !important;
+    padding: 12px 14px !important;
+    margin-left: 40px !important;
+    margin-right: 40px !important;
     font-size: 0.85rem;
   }
 
   .experience-container .desktop-timeline .card h3 {
-    font-size: 0.95rem !important;
+    font-size: 1rem !important;
     margin-bottom: 4px !important;
     line-height: 1.2 !important;
   }
 
   .experience-container .desktop-timeline .card > div:nth-child(2) {
-    font-size: 0.75rem !important;
+    font-size: 0.8rem !important;
     margin-bottom: 3px !important;
   }
 
   .experience-container .desktop-timeline .card > div:nth-child(3) {
-    font-size: 0.85rem !important;
+    font-size: 0.9rem !important;
     margin: 3px 0 6px 0 !important;
   }
 

@@ -18,14 +18,14 @@ const cardStyle = {
 
 const Projects = () => {
   return (
-    <div className="projects-container" style={{ minHeight: '100vh', padding: '40px 20px', textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
+    <div className="projects-container" style={{ minHeight: 'auto', padding: '5px', textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
       <div style={sectionHeadingStyle}>
         {"Projects"}
       </div>
       <div
         style={{
           display: 'flex',
-          gap: '40px',
+          gap: '30px',
           flexWrap: 'wrap',
           justifyContent: 'center',
           alignItems: 'flex-start',
@@ -33,20 +33,26 @@ const Projects = () => {
           marginLeft: '0',
           width: '100%',
           maxWidth: '1200px',
-          boxSizing: 'border-box'
+          boxSizing: 'border-box',
+          '@media (max-width: 768px)': {
+            flexDirection: 'column',
+            alignItems: 'center'
+          }
         }}
       >
         {/* Left Project Card */}
         <div
           style={{
             ...cardStyle,
-            flex: '1 1 500px',
-            minWidth: '300px',
+            flex: '1 1 450px',
+            minWidth: '280px',
+            maxWidth: '550px',
             background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
             border: '2px solid #00ffff',
             boxShadow: '0 0 14px #00ffff33',
             padding: '32px 32px 24px 32px'
           }}
+          className="project-card"
         >
           <div
             style={{
@@ -98,13 +104,15 @@ const Projects = () => {
         <div
           style={{
             ...cardStyle,
-            flex: '1 1 500px',
-            minWidth: '300px',
+            flex: '1 1 450px',
+            minWidth: '280px',
+            maxWidth: '550px',
             background: 'linear-gradient(120deg, #1a002a 60%, #330033 80%, #ff00ff 120%)',
             border: '2px solid #ff00ff',
             boxShadow: '0 0 14px #ff00ff33',
             padding: '32px 32px 24px 32px'
           }}
+          className="project-card"
         >
           <div
             style={{

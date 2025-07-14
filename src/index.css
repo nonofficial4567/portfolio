@@ -33,14 +33,14 @@ a:hover {
 }
 
 section {
-  padding: 60px 20px;
+  padding: 5px 20px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -738,7 +738,7 @@ footer a:hover {
   }
 
   section {
-    padding: 40px 15px;
+    padding: 10px 15px;
     min-height: auto;
   }
 
@@ -790,6 +790,19 @@ footer a:hover {
     min-height: auto !important;
   }
 
+  /* Force single column layout on mobile for projects */
+  .projects-container > div:first-of-type {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .projects-container > div:first-of-type > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+
   /* Experience Section Mobile */
   .experience-container > div:first-of-type {
     width: 100% !important;
@@ -824,21 +837,21 @@ footer a:hover {
     max-width: 100% !important;
   }
 
- /* Responsibilities Mobile Layout */
- .responsibilities-section .desktop-timeline {
+ /* Experience Timeline Mobile */
+ .experience-container .desktop-timeline {
    display: block;
  }
  
- .responsibilities-section .mobile-timeline {
+ .experience-container .mobile-timeline {
    display: none !important;
  }
  
  @media (max-width: 768px) {
-   .responsibilities-section .desktop-timeline {
+   .experience-container .desktop-timeline {
      display: none !important;
    }
    
-   .responsibilities-section .mobile-timeline {
+   .experience-container .mobile-timeline {
      display: block !important;
      width: 100%;
      padding: 0 10px;
@@ -860,8 +873,8 @@ footer a:hover {
      }
    }
  }
-  /* Responsibilities Timeline Mobile */
-  .responsibilities-section .card {
+  /* Experience Timeline Mobile */
+  .experience-container .card {
     width: 90% !important;
     max-width: 90% !important;
     margin-left: 0 !important;
@@ -928,11 +941,11 @@ footer a:hover {
   }
 
   .home-section {
-    padding: 70px 15px 30px;
+    padding: 70px 15px 5px;
   }
 
   section {
-    padding: 30px 10px;
+    padding: 3px 10px;
   }
 
   /* Extra small screens */

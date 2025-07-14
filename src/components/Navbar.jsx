@@ -10,7 +10,6 @@ const Navbar = () => {
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
-    { id: 'responsibilities', label: 'Responsibilities' },
     { id: 'contact', label: 'Contact' },
   ];
 

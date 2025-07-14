@@ -16,7 +16,7 @@ export const sectionHeadingStyle = {
 
 const About = () => {
   return (
-    <div style={{ paddingTop: '0px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 20px' }}>
+    <div style={{ paddingTop: '5px', paddingBottom: '5px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '5px' }}>
       {/* About Heading */}
       <div style={sectionHeadingStyle}>
         {"About Me"}
@@ -63,7 +63,8 @@ const About = () => {
             fontSize: '1.15rem',
             color: '#e0e0e0',
             marginBottom: '18px',
-            lineHeight: 1.7
+            lineHeight: 1.7,
+            textAlign: 'justify'
           }}>
             I'm a passionate Computer Science student at Manipal University Jaipur, specializing in full-stack development and cloud technologies. With a strong foundation in modern web technologies and a keen interest in innovative solutions, I strive to create impactful digital experiences.
           </div>
@@ -72,7 +73,8 @@ const About = () => {
             fontSize: '1.15rem',
             color: '#e0e0e0',
             marginBottom: '32px',
-            lineHeight: 1.7
+            lineHeight: 1.7,
+            textAlign: 'justify'
           }}>
             My journey in technology is driven by curiosity and a desire to solve real-world problems. From developing digital rehabilitation systems to creating conference websites, I enjoy working on projects that make a difference.
           </div>

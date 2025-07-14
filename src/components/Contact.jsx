@@ -8,11 +8,11 @@ const Contact = () => {
     <div
       className="contact-container"
       style={{
-        minHeight: '100vh',
+        minHeight: 'auto',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        padding: '40px 20px',
+        padding: '5px',
         position: 'relative',
         zIndex: 1,
         width: '100%',

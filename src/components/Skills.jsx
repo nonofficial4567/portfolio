@@ -4,7 +4,7 @@ import { sectionHeadingStyle } from './About';
 
 const Skills = () => {
   return (
-    <div className="skills-container" style={{ textAlign: 'center', minHeight: '100vh', padding: '40px 20px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
+    <div className="skills-container" style={{ textAlign: 'center', minHeight: 'auto', padding: '5px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
       <div style={sectionHeadingStyle}>
               {"Skills"}
       </div>

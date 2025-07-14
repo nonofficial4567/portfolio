@@ -33,11 +33,7 @@ const Projects = () => {
           marginLeft: '0',
           width: '100%',
           maxWidth: '1200px',
-          boxSizing: 'border-box',
-          '@media (max-width: 768px)': {
-            flexDirection: 'column',
-            alignItems: 'center'
-          }
+          boxSizing: 'border-box'
         }}
       >
         {/* Left Project Card */}

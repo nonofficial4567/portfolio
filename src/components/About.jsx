@@ -31,89 +31,67 @@ const About = () => {
         marginLeft: '0',
         width: '100%',
         maxWidth: '1200px',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        flexDirection: window.innerWidth > 900 ? 'row-reverse' : 'column', // swap order on desktop
       }}>
-        {/* Left big card */}
-        <div style={{
-          flex: '1 1 600px',
-          minWidth: '300px',
-           background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
-          border: '2px solid #00ffff',
-          borderRadius: '16px',
-          boxShadow: '0 0 14px #00fff7a0',
-          padding: '32px 32px 24px 32px',
-          marginBottom: '20px',
-          color: '#fff',
-          position: 'relative',
-          boxSizing: 'border-box'
-        }}>
-          <div style={{
-            fontFamily: "'Share Tech Mono', monospace",
-            fontWeight: 700,
-            fontSize: '2rem',
-            color: '#00ffff',
-            marginBottom: '18px',
-            letterSpacing: '1.5px',
-            textAlign: 'left'
-          }}>
+        {/* Left big card (now on right in desktop) */}
+        <div
+          style={{
+            flex: '1 1 600px',
+            minWidth: '300px',
+            background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
+            border: '2px solid #00ffff',
+            borderRadius: '16px',
+            boxShadow: '0 0 14px #00fff7a0',
+            padding: '32px 32px 20px 32px',
+            marginBottom: '20px',
+            color: '#fff',
+            position: 'relative',
+            boxSizing: 'border-box'
+          }}
+        >
+          <div
+            className="profile-exe-title"
+            style={{
+              fontFamily: "'Share Tech Mono', monospace",
+              fontWeight: 700,
+              fontSize: '2rem',
+              color: '#00ffff',
+              marginBottom: '18px',
+              letterSpacing: '1.5px',
+              textAlign: 'left'
+            }}
+          >
             Profile.exe
           </div>
-          <div style={{
-            fontFamily: "'Share Tech Mono', monospace",
-            fontSize: '1.15rem',
-            color: '#e0e0e0',
-            marginBottom: '18px',
-            lineHeight: 1.7,
-            textAlign: 'justify'
-          }}>
+          <div
+            className="profile-exe-desc"
+            style={{
+              fontFamily: "'Share Tech Mono', monospace",
+              fontSize: '1.15rem',
+              color: '#e0e0e0',
+              marginBottom: '18px',
+              lineHeight: 1.7,
+              textAlign: 'justify'
+            }}
+          >
             I'm a passionate Computer Science student at Manipal University Jaipur, specializing in full-stack development and cloud technologies. With a strong foundation in modern web technologies and a keen interest in innovative solutions, I strive to create impactful digital experiences.
           </div>
-          <div style={{
-            fontFamily: "'Share Tech Mono', monospace",
-            fontSize: '1.15rem',
-            color: '#e0e0e0',
-            marginBottom: '32px',
-            lineHeight: 1.7,
-            textAlign: 'justify'
-          }}>
+          <div
+            className="profile-exe-desc"
+            style={{
+              fontFamily: "'Share Tech Mono', monospace",
+              fontSize: '1.15rem',
+              color: '#e0e0e0',
+              marginBottom: '18px',
+              lineHeight: 1.7,
+              textAlign: 'justify'
+            }}
+          >
             My journey in technology is driven by curiosity and a desire to solve real-world problems. From developing digital rehabilitation systems to creating conference websites, I enjoy working on projects that make a difference.
           </div>
-          <div style={{
-            display: 'flex',
-            gap: '40px',
-            marginTop: '10px'
-          }}>
-            <div style={{ textAlign: 'center', flex: 1 }}>
-              <div style={{
-                fontFamily: "'Share Tech Mono', monospace",
-                fontWeight: 700,
-                fontSize: '2.1rem',
-                color: '#00ffff',
-                marginBottom: '2px'
-              }}>8.27</div>
-              <div style={{
-                fontFamily: "'Share Tech Mono', monospace",
-                fontSize: '1rem',
-                color: '#baffc9'
-              }}>Current CGPA</div>
-            </div>
-            <div style={{ textAlign: 'center', flex: 1 }}>
-              <div style={{
-                fontFamily: "'Share Tech Mono', monospace",
-                fontWeight: 700,
-                fontSize: '2.1rem',
-                color: '#00ffff',
-                marginBottom: '2px'
-              }}>2026</div>
-              <div style={{
-                fontFamily: "'Share Tech Mono', monospace",
-                fontSize: '1rem',
-                color: '#baffff'
-              }}>Graduation Year</div>
-            </div>
-          </div>
         </div>
-        {/* Right two stacked cards */}
+        {/* Right two stacked cards (now on left in desktop) */}
         <div style={{
           flex: '1 1 400px',
           minWidth: '300px',
@@ -129,96 +107,120 @@ const About = () => {
             boxShadow: '0 0 14px #39ff1433',
             padding: '28px 28px 18px 28px',
             marginBottom: '0',
-            color: '#fff'
+            color: '#fff',
+            lineHeight: 1.7 // Match line spacing with profile.exe card
           }}>
-            <div style={{
-              fontFamily: "'Share Tech Mono', monospace",
-              fontWeight: 700,
-              fontSize: '1.3rem',
-              color: '#39ff14',
-              marginBottom: '12px',
-              letterSpacing: '1px',
-              textAlign: 'left'
-            }}>
+            <div
+              className="education-title"
+              style={{
+                fontFamily: "'Share Tech Mono', monospace",
+                fontWeight: 700,
+                fontSize: '2rem',
+                color: '#39ff14',
+                marginBottom: '18px',
+                letterSpacing: '1.5px',
+                textAlign: 'left',
+                textShadow: '0 0 8px #39ff14',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px'
+              }}
+            >
               Education
             </div>
             <div style={{
-              fontFamily: "'Share Tech Mono', monospace",
-              fontWeight: 600,
-              fontSize: '1.1rem',
-              color: '#fff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
               marginBottom: '2px'
             }}>
-              Bachelor of Technology
+              <span style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                fontFamily: "'Share Tech Mono', monospace",
+                fontWeight: 600,
+                fontSize: '1.1rem',
+                color: '#fff',
+                lineHeight: 1.7 // Match line spacing
+              }}>
+                <span style={{ fontSize: '1.2em', color: '#39ff14' }}>🎓</span>
+                Bachelor of Technology
+              </span>
+              <span style={{
+                color: '#baffc9',
+                fontSize: '0.98rem',
+                fontWeight: 400,
+                marginLeft: '12px',
+                minWidth: '80px',
+                textAlign: 'right',
+                display: 'inline-block',
+                lineHeight: 1.7 // Match line spacing
+              }}>
+                2022-2026
+              </span>
             </div>
             <div style={{
               fontFamily: "'Share Tech Mono', monospace",
               fontWeight: 600,
               fontSize: '1.1rem',
               color: '#00ffff',
-              marginBottom: '2px'
+              marginBottom: '2px',
+              lineHeight: 1.7 // Match line spacing
             }}>
               Manipal University Jaipur
             </div>
             <div style={{
               fontFamily: "'Share Tech Mono', monospace",
               fontSize: '0.98rem',
-              color: '#baffc9'
+              color: '#baffc9',
+              marginBottom: '10px',
+              lineHeight: 1.7 // Match line spacing
             }}>
               Computer Science | Cloud Computing Minor
             </div>
-          </div>
-          <div style={{
-            background: 'linear-gradient(120deg, #1a002a 60%, #330033 80%, #ff00ff 120%)',
-            border: '2px solid #ff00ff',
-            borderRadius: '16px',
-            boxShadow: '0 0 14px #ff00ff33',
-            padding: '28px 28px 18px 28px',
-            color: '#fff'
-          }}>
+            {/* Senior Secondary */}
             <div style={{
-              fontFamily: "'Share Tech Mono', monospace",
-              fontWeight: 700,
-              fontSize: '1.3rem',
-              color: '#ff00ff',
-              marginBottom: '12px',
-              letterSpacing: '1px',
-              textAlign: 'left'
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginBottom: '2px'
             }}>
-              Recent Achievements
+              <span style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                fontFamily: "'Share Tech Mono', monospace",
+                fontWeight: 600,
+                fontSize: '1.1rem',
+                color: '#fff',
+                lineHeight: 1.7 // Match line spacing
+              }}>
+                <span style={{ fontSize: '1.2em', color: '#39ff14' }}>🏫</span>
+                Senior Secondary
+              </span>
+              <span style={{
+                color: '#baffc9',
+                fontSize: '0.98rem',
+                fontWeight: 400,
+                marginLeft: '12px',
+                minWidth: '80px',
+                textAlign: 'right',
+                display: 'inline-block',
+                lineHeight: 1.7 // Match line spacing
+              }}>
+                2021-2022
+              </span>
             </div>
             <div style={{
               fontFamily: "'Share Tech Mono', monospace",
               fontWeight: 600,
               fontSize: '1.1rem',
-              color: '#fff',
-              marginBottom: '2px'
+              color: '#00ffff',
+              marginBottom: '2px',
+              lineHeight: 1.7 // Match line spacing
             }}>
-              Student Excellence Award 2025
-            </div>
-            <div style={{
-              fontFamily: "'Share Tech Mono', monospace",
-              fontSize: '0.98rem',
-              color: '#baffff',
-              marginBottom: '10px'
-            }}>
-              Patent Recognition
-            </div>
-            <div style={{
-              fontFamily: "'Share Tech Mono', monospace",
-              fontWeight: 600,
-              fontSize: '1.1rem',
-              color: '#fff',
-              marginBottom: '2px'
-            }}>
-              Dean's List
-            </div>
-            <div style={{
-              fontFamily: "'Share Tech Mono', monospace",
-              fontSize: '0.98rem',
-              color: '#baffff'
-            }}>
-              Academic Excellence
+              DAV Public School
             </div>
           </div>
         </div>
@@ -228,3 +230,37 @@ const About = () => {
 };
 
 export default About;
+
+// Add this at the end of the file or in your global CSS if preferred
+// This ensures the mobile font size and spacing for Profile.exe and Education section
+
+if (typeof window !== "undefined") {
+  const style = document.createElement('style');
+  style.innerHTML = `
+    @media (max-width: 768px) {
+      .profile-exe-title, .education-title {
+        font-size: 1.6rem !important;
+        margin-bottom: 8px !important;
+        line-height: 1.2 !important;
+        text-align: left !important;
+      }
+      .profile-exe-desc {
+        font-size: 1.05rem !important;
+        line-height: 1.35 !important;
+        text-align: left !important;
+      }
+    }
+    @media (min-width: 769px) {
+      .profile-exe-title {
+        font-size: 2rem !important;
+        text-align: left !important;
+      }
+      .profile-exe-desc {
+        font-size: 1.15rem !important;
+        line-height: 1.7 !important;
+        text-align: justify !important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+}

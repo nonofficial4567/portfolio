@@ -3,8 +3,30 @@ import ProgressBar from './ProgressBar';
 import { sectionHeadingStyle } from './About';
 
 const Skills = () => {
+  // Add responsive styles for certificates
+  const certificateStyles = `
+    <style>
+      @media (max-width: 769px) {
+        .certificate-card {
+          flex: 1 1 calc(50% - 10px) !important;
+          min-width: 250px !important;
+        }
+      }
+      @media (max-width: 580px) {
+        .certificate-card {
+          flex: 1 1 calc(50% - 8px) !important;
+          min-width: 140px !important;
+        }
+        .certificates-grid {
+          gap: 8px !important;
+        }
+      }
+    </style>
+  `;
+
   return (
     <div className="skills-container" style={{ textAlign: 'center', minHeight: 'auto', padding: '5px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
+      <div dangerouslySetInnerHTML={{ __html: certificateStyles }} />
       <div style={sectionHeadingStyle}>
               {"Skills"}
       </div>
@@ -90,70 +112,132 @@ const Skills = () => {
       <div
         style={{
           display: 'flex',
-          gap: '32px',
+          gap: '15px',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          marginTop: '20px',
+          marginTop: '10px',
           width: '100%',
           maxWidth: '1200px',
           boxSizing: 'border-box'
         }}
+        className="certificates-grid"
       >
         <div
-          className="card neon-card"
+          className="card neon-card certificate-card"
           style={{
-            flex: '1 1 320px',
+            flex: '1 1 calc(33.333% - 10px)',
             minWidth: '280px',
             background: 'linear-gradient(120deg, #331a00 60%, #663300 80%, #ff7b00 120%)',            
             borderRadius: '18px',
             boxShadow: '0 0 14px #ff7b0055',
             border: '2px solid #ff7b00',
-            padding: '24px 18px',
-            boxSizing: 'border-box'
+            padding: '0 14px 14px',
+            boxSizing: 'border-box',
+            textAlign: 'left'
           }}
         >
-          <h4 style={{ color: '#ff7b00', fontWeight: 600, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <h4 style={{ color: '#ff7b00', fontWeight: 600, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
             <span role="img" aria-label="cloud">☁️</span> AWS Cloud Foundations
           </h4>
-          <p style={{ color: '#fff', opacity: 0.8 }}>AWS Academy Graduate</p>
+          <p style={{ color: '#fff', opacity: 0.8, margin: 0 }}>AWS Academy Graduate</p>
         </div>
         <div
-          className="card neon-card"
+          className="card neon-card certificate-card"
           style={{
-            flex: '1 1 320px',
+            flex: '1 1 calc(33.333% - 10px)',
             minWidth: '280px',
             background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
 
             borderRadius: '18px',
             boxShadow: '0 0 14px #00f0ff55',
             border: '2px solid #00f0ff',
-            padding: '24px 18px',
-            boxSizing: 'border-box'
+            padding: '0 14px 14px',
+            boxSizing: 'border-box',
+            textAlign: 'left'
           }}
         >
-          <h4 style={{ color: '#00f0ff', fontWeight: 600, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <h4 style={{ color: '#00f0ff', fontWeight: 600, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
             <span>&#60;&#62;</span> Java Foundations
           </h4>
-          <p style={{ color: '#fff', opacity: 0.8 }}>Oracle Academy</p>
+          <p style={{ color: '#fff', opacity: 0.8, margin: 0 }}>Oracle Academy</p>
         </div>
         <div
-          className="card neon-card"
+          className="card neon-card certificate-card"
           style={{
-            flex: '1 1 320px',
+            flex: '1 1 calc(33.333% - 10px)',
             minWidth: '280px',
             background: 'linear-gradient(120deg, #002a1a 60%, #003300 80%, #00ff99 120%)',
 
             borderRadius: '18px',
             boxShadow: '0 0 14px #00ffb355',
             border: '2px solid #00ffb3',
-            padding: '24px 18px',
-            boxSizing: 'border-box'
+            padding: '0 14px 14px',
+            boxSizing: 'border-box',
+            textAlign: 'left'
           }}
         >
-          <h4 style={{ color: '#00ffb3', fontWeight: 600, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <h4 style={{ color: '#00ffb3', fontWeight: 600, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
             <span role="img" aria-label="frontend">&#127760;</span> Frontend Development
           </h4>
-          <p style={{ color: '#fff', opacity: 0.8 }}>Meta Certified</p>
+          <p style={{ color: '#fff', opacity: 0.8, margin: 0 }}>Meta Certified</p>
+        </div>
+        <div
+          className="card neon-card certificate-card"
+          style={{
+            flex: '1 1 calc(33.333% - 10px)',
+            minWidth: '280px',
+            background: 'linear-gradient(120deg, #1a002a 60%, #330033 80%, #ff00ff 120%)',
+            borderRadius: '18px',
+            boxShadow: '0 0 14px #ff00ff55',
+            border: '2px solid #ff00ff',
+            padding: '0 14px 14px',
+            boxSizing: 'border-box',
+            textAlign: 'left'
+          }}
+        >
+          <h4 style={{ color: '#ff00ff', fontWeight: 600, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+            <span role="img" aria-label="database">🗄️</span> Database Management
+          </h4>
+          <p style={{ color: '#fff', opacity: 0.8, margin: 0 }}>Oracle Certified</p>
+        </div>
+        <div
+          className="card neon-card certificate-card"
+          style={{
+            flex: '1 1 calc(33.333% - 10px)',
+            minWidth: '280px',
+            background: 'linear-gradient(120deg, #331a00 60%, #663300 80%, #ff7b00 120%)',            
+            borderRadius: '18px',
+            boxShadow: '0 0 14px #ff7b0055',
+            border: '2px solid #ff7b00',
+            padding: '0 14px 14px',
+            boxSizing: 'border-box',
+            textAlign: 'left'
+          }}
+        >
+          <h4 style={{ color: '#ff7b00', fontWeight: 600, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+            <span role="img" aria-label="react">⚛️</span> React Development
+          </h4>
+          <p style={{ color: '#fff', opacity: 0.8, margin: 0 }}>Meta Professional</p>
+        </div>
+        <div
+          className="card neon-card certificate-card"
+          style={{
+            flex: '1 1 calc(33.333% - 10px)',
+            minWidth: '280px',
+            background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
+
+            borderRadius: '18px',
+            boxShadow: '0 0 14px #00f0ff55',
+            border: '2px solid #00f0ff',
+            padding: '0 14px 14px',
+            boxSizing: 'border-box',
+            textAlign: 'left'
+          }}
+        >
+          <h4 style={{ color: '#00f0ff', fontWeight: 600, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+            <span role="img" aria-label="nodejs">🚀</span> Node.js Fundamentals
+          </h4>
+          <p style={{ color: '#fff', opacity: 0.8, margin: 0 }}>IBM Certified</p>
         </div>
       </div>
     </div>

@@ -37,7 +37,7 @@ const Home = () => {
       <div className="grid-background" />
       <div className="hex-background" />
       
-      <div className="home-container">
+       <div className="home-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
         {/* Left: Name, typing, desc, buttons, social */}
         <div className="home-left">
           <div className="name-section">

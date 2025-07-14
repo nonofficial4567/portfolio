@@ -691,7 +691,7 @@ footer a:hover {
   }
 
   .home-section {
-    padding: 70px 15px 15px;
+    padding: 70px 8px 15px;
     min-height: calc(100vh - 60px);
   }
 
@@ -764,11 +764,11 @@ footer a:hover {
   .stats-cards {
     justify-content: center;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 8px;
   }
 
   section {
-    padding: 15px 15px;
+    padding: 15px 8px;
     min-height: auto;
     width: 100%;
     box-sizing: border-box;
@@ -778,7 +778,7 @@ footer a:hover {
   .about-container {
     flex-direction: column !important;
     gap: 15px !important;
-    padding: 0 15px;
+    padding: 0 8px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -792,7 +792,7 @@ footer a:hover {
   }
 
   .about-container .card {
-    padding: 20px 18px !important;
+    padding: 16px 12px !important;
     margin-bottom: 15px !important;
   }
   /* Skills Section Mobile */
@@ -800,7 +800,7 @@ footer a:hover {
     flex-direction: column !important;
     gap: 15px !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 8px;
     box-sizing: border-box;
   }
 
@@ -811,14 +811,14 @@ footer a:hover {
     max-width: 100% !important;
     margin: 0 !important;
     box-sizing: border-box;
-    padding: 20px 18px !important;
+    padding: 16px 12px !important;
   }
 
   .skills-container > div:last-of-type {
     flex-direction: column !important;
     gap: 15px !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 8px;
     box-sizing: border-box;
   }
 
@@ -828,7 +828,7 @@ footer a:hover {
     gap: 15px !important;
     align-items: center !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 8px;
     box-sizing: border-box;
   }
 
@@ -839,7 +839,7 @@ footer a:hover {
     height: auto !important;
     min-height: auto !important;
     box-sizing: border-box;
-    padding: 20px 18px !important;
+    padding: 16px 12px !important;
   }
 
   /* Force single column layout on mobile for projects */
@@ -848,7 +848,7 @@ footer a:hover {
     flex-direction: column !important;
     align-items: center !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 8px;
     box-sizing: border-box;
   }
 
@@ -864,19 +864,19 @@ footer a:hover {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
-    padding: 0 15px;
+    padding: 0 8px;
     box-sizing: border-box;
   }
   /* Experience Timeline Mobile Adjustments */
   .experience-container .desktop-timeline {
-    padding: 0 15px;
+    padding: 0 8px;
     max-width: 100%;
   }
 
   .experience-container .desktop-timeline .card {
     width: calc(100% - 60px) !important;
     max-width: calc(100% - 60px) !important;
-    padding: 12px 14px !important;
+    padding: 10px 12px !important;
     margin-left: 30px !important;
     margin-right: 0 !important;
     font-size: 0.85rem;
@@ -902,7 +902,7 @@ footer a:hover {
     flex-direction: column !important;
     gap: 15px !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 8px;
     box-sizing: border-box;
   }
 
@@ -912,7 +912,7 @@ footer a:hover {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box;
-    padding: 16px 14px !important;
+    padding: 14px 12px !important;
   }
 
   /* Contact Section Mobile */
@@ -921,7 +921,7 @@ footer a:hover {
     gap: 15px !important;
     align-items: center !important;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 8px;
     box-sizing: border-box;
   }
 
@@ -932,7 +932,7 @@ footer a:hover {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box;
-    padding: 18px 16px !important;
+    padding: 16px 12px !important;
   }
 
  /* Experience Timeline Mobile */
@@ -952,7 +952,7 @@ footer a:hover {
    .experience-container .mobile-timeline {
      display: none !important;
      width: 100%;
-     padding: 0 15px;
+     padding: 0 8px;
      box-sizing: border-box;
    }
    
@@ -1007,7 +1007,7 @@ footer a:hover {
   /* Fix section headings spacing */
   .section-heading {
     margin: 15px 0 25px 0 !important;
-    padding: 0 15px !important;
+    padding: 0 8px !important;
     text-align: left !important;
     font-size: 2.2rem !important;
   }
@@ -1024,7 +1024,7 @@ footer a:hover {
   }
 
   .home-section {
-    padding: 65px 12px 15px;
+    padding: 65px 5px 15px;
   }
 
   .main-title {
@@ -1069,7 +1069,7 @@ footer a:hover {
 
 
   section {
-    padding: 12px 12px;
+    padding: 12px 5px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -1113,7 +1113,7 @@ footer a:hover {
 
   /* Awards section spacing fix */
   .awards-container {
-    padding: 0 12px !important;
+    padding: 0 5px !important;
     width: 100% !important;
     box-sizing: border-box !important;
   }

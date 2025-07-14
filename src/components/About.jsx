@@ -135,16 +135,12 @@ const About = () => {
               marginBottom: '2px'
             }}>
               <span style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
                 fontFamily: "'Share Tech Mono', monospace",
                 fontWeight: 600,
                 fontSize: '1.1rem',
                 color: '#fff',
                 lineHeight: 1.7 // Match line spacing
               }}>
-                <span style={{ fontSize: '1.2em', color: '#39ff14' }}>🎓</span>
                 Bachelor of Technology
               </span>
               <span style={{
@@ -187,16 +183,12 @@ const About = () => {
               marginBottom: '2px'
             }}>
               <span style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
                 fontFamily: "'Share Tech Mono', monospace",
                 fontWeight: 600,
                 fontSize: '1.1rem',
                 color: '#fff',
                 lineHeight: 1.7 // Match line spacing
               }}>
-                <span style={{ fontSize: '1.2em', color: '#39ff14' }}>🏫</span>
                 Senior Secondary
               </span>
               <span style={{
@@ -264,45 +256,77 @@ if (typeof window !== "undefined") {
   /* Mobile responsive styles for About section */
   @media (max-width: 768px) {
     .profile-exe-title, .education-title {
-      font-size: 1.4rem !important;
+      font-size: 1.3rem !important;
       margin-bottom: 10px !important;
       line-height: 1.2 !important;
       text-align: left !important;
     }
     .profile-exe-desc {
-      font-size: 0.95rem !important;
+      font-size: 0.9rem !important;
       line-height: 1.5 !important;
       text-align: left !important;
       margin-bottom: 12px !important;
     }
     .about-container .card {
-      padding: 18px 16px !important;
+      padding: 14px 12px !important;
     }
     .education-title {
       margin-bottom: 12px !important;
     }
     .about-container .card > div {
-      font-size: 0.9rem !important;
+      font-size: 0.85rem !important;
       line-height: 1.5 !important;
       margin-bottom: 6px !important;
+    }
+    /* Education section specific mobile adjustments */
+    .about-container .card > div[style*="display: flex"] {
+      font-size: 0.9rem !important;
+    }
+    .about-container .card > div[style*="display: flex"] span:first-child {
+      font-size: 0.9rem !important;
+    }
+    .about-container .card > div[style*="display: flex"] span:last-child {
+      font-size: 0.8rem !important;
+    }
+    .about-container .card > div[style*="color: #00ffff"] {
+      font-size: 0.9rem !important;
+    }
+    .about-container .card > div[style*="color: #baffc9"] {
+      font-size: 0.8rem !important;
     }
   }
   @media (max-width: 480px) {
     .profile-exe-title, .education-title {
-      font-size: 1.2rem !important;
+      font-size: 1.1rem !important;
       margin-bottom: 8px !important;
     }
     .profile-exe-desc {
-      font-size: 0.85rem !important;
+      font-size: 0.8rem !important;
       line-height: 1.4 !important;
       margin-bottom: 10px !important;
     }
     .about-container .card {
-      padding: 14px 12px !important;
+      padding: 12px 10px !important;
     }
     .about-container .card > div {
-      font-size: 0.8rem !important;
+      font-size: 0.75rem !important;
       margin-bottom: 4px !important;
+    }
+    /* Education section specific mobile adjustments for very small screens */
+    .about-container .card > div[style*="display: flex"] {
+      font-size: 0.8rem !important;
+    }
+    .about-container .card > div[style*="display: flex"] span:first-child {
+      font-size: 0.8rem !important;
+    }
+    .about-container .card > div[style*="display: flex"] span:last-child {
+      font-size: 0.75rem !important;
+    }
+    .about-container .card > div[style*="color: #00ffff"] {
+      font-size: 0.8rem !important;
+    }
+    .about-container .card > div[style*="color: #baffc9"] {
+      font-size: 0.75rem !important;
     }
   }
   `;

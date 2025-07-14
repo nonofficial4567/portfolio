@@ -32,7 +32,7 @@ const About = () => {
         width: '100%',
         maxWidth: '1200px',
         boxSizing: 'border-box',
-        flexDirection: window.innerWidth > 900 ? 'row-reverse' : 'column', // swap order on desktop
+        flexDirection: window.innerWidth > 768 ? 'row-reverse' : 'column', // swap order on desktop and tablet
       }}>
         {/* Left big card (now on right in desktop) */}
         <div

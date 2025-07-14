@@ -33,7 +33,7 @@ a:hover {
 }
 
 section {
-  padding: 5px 20px;
+  padding: 5px 10px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -120,7 +120,7 @@ button svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  padding: 10px 20px;
   z-index: 1000;
   box-shadow:
     0 0 10px var(--neon-blue),
@@ -324,7 +324,7 @@ button svg {
   margin: 0;
   letterSpacing: 3px;
   lineHeight: 1.05;
-  textAlign: left;
+  textAlign: 'left';
   textShadow: 0 0 32px #00ffff, 0 0 80px #00ffff, 0 0 120px #00ffff;
   fontWeight: 900;
   fontFamily: 'Orbitron, "Segoe UI", Arial, sans-serif';
@@ -669,7 +669,9 @@ footer a:hover {
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px 20px;
+    padding: 8px 15px;
+    height: 60px;
+    box-sizing: border-box;
   }
 
   .desktop-nav {
@@ -688,65 +690,97 @@ footer a:hover {
     display: block;
   }
 
+  .home-section {
+    padding: 70px 8px 15px;
+    min-height: calc(100vh - 60px);
+  }
+
   .home-container {
     flex-direction: column;
     gap: 40px;
     align-items: center;
     text-align: center;
+    padding-top: 20px;
   }
 
   .home-left {
     align-items: center;
-    text-align: center;
+    text-align: left;
     max-width: 100%;
+    width: 100%;
   }
 
   .home-right {
+    display: none;
     margin-top: 0;
     max-width: 100%;
+    width: 100%;
   }
 
   .main-title {
-    font-size: 2.8rem;
-    text-align: center;
+    font-size: 2.4rem;
+    text-align: left;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
   }
 
   .name-card {
-    text-align: center;
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
   }
 
   .description {
-    text-align: center;
-    font-size: 1rem;
+    text-align: left;
+    font-size: 0.95rem;
+    margin: 15px 0;
+    padding: 0;
   }
 
   .button-section {
-    justify-content: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0;
   }
 
   .btn-primary,
   .btn-secondary {
-    min-width: 160px;
+    min-width: 140px;
+    flex: 1;
+    max-width: 180px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
   }
 
   .social-icons {
-    justify-content: center;
+    justify-content: flex-start;
+    margin-top: 30px;
   }
 
   .stats-cards {
     justify-content: center;
+    width: 100%;
+    padding: 0 8px;
   }
 
   section {
-    padding: 10px 15px;
+    padding: 15px 8px;
     min-height: auto;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   /* About Section Mobile */
   .about-container {
     flex-direction: column !important;
-    gap: 20px !important;
-    padding: 0 10px;
+    gap: 15px !important;
+    padding: 0 8px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .about-container > div {
@@ -754,12 +788,20 @@ footer a:hover {
     min-width: auto !important;
     width: 100% !important;
     max-width: 100% !important;
+    box-sizing: border-box;
   }
 
+  .about-container .card {
+    padding: 16px 12px !important;
+    margin-bottom: 15px !important;
+  }
   /* Skills Section Mobile */
   .skills-container > div:first-of-type {
     flex-direction: column !important;
-    gap: 20px !important;
+    gap: 15px !important;
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
   }
 
   .skills-container .card {
@@ -768,18 +810,26 @@ footer a:hover {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
+    box-sizing: border-box;
+    padding: 16px 12px !important;
   }
 
   .skills-container > div:last-of-type {
     flex-direction: column !important;
     gap: 15px !important;
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
   }
 
   /* Projects Section Mobile */
   .projects-container > div {
     flex-direction: column !important;
-    gap: 20px !important;
+    gap: 15px !important;
     align-items: center !important;
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
   }
 
   .projects-container .card,
@@ -788,6 +838,8 @@ footer a:hover {
     max-width: 100% !important;
     height: auto !important;
     min-height: auto !important;
+    box-sizing: border-box;
+    padding: 16px 12px !important;
   }
 
   /* Force single column layout on mobile for projects */
@@ -795,12 +847,16 @@ footer a:hover {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
   }
 
   .projects-container > div:first-of-type > div {
     width: 100% !important;
     max-width: 100% !important;
     flex: none !important;
+    box-sizing: border-box;
   }
 
   /* Experience Section Mobile */
@@ -808,11 +864,46 @@ footer a:hover {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+  /* Experience Timeline Mobile Adjustments */
+  .experience-container .desktop-timeline {
+    padding: 0 8px;
+    max-width: 100%;
+  }
+
+  .experience-container .desktop-timeline .card {
+    width: calc(100% - 60px) !important;
+    max-width: calc(100% - 60px) !important;
+    padding: 10px 12px !important;
+    margin-left: 30px !important;
+    margin-right: 0 !important;
+    font-size: 0.85rem;
+  }
+
+  .experience-container .desktop-timeline .card h3 {
+    font-size: 0.95rem !important;
+    margin-bottom: 4px !important;
+    line-height: 1.2 !important;
+  }
+
+  .experience-container .desktop-timeline .card > div:nth-child(2) {
+    font-size: 0.75rem !important;
+    margin-bottom: 3px !important;
+  }
+
+  .experience-container .desktop-timeline .card > div:nth-child(3) {
+    font-size: 0.85rem !important;
+    margin: 3px 0 6px 0 !important;
   }
 
   .experience-container > div:last-of-type {
     flex-direction: column !important;
     gap: 15px !important;
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
   }
 
   .experience-container .card {
@@ -820,13 +911,18 @@ footer a:hover {
     min-width: auto !important;
     width: 100% !important;
     max-width: 100% !important;
+    box-sizing: border-box;
+    padding: 14px 12px !important;
   }
 
   /* Contact Section Mobile */
   .contact-container > div:last-of-type {
     flex-direction: column !important;
-    gap: 20px !important;
+    gap: 15px !important;
     align-items: center !important;
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
   }
 
   .contact-container .card,
@@ -835,11 +931,13 @@ footer a:hover {
     min-width: auto !important;
     width: 100% !important;
     max-width: 100% !important;
+    box-sizing: border-box;
+    padding: 16px 12px !important;
   }
 
  /* Experience Timeline Mobile */
  .experience-container .desktop-timeline {
-   display: block;
+   display: block !important;
  }
  
  .experience-container .mobile-timeline {
@@ -848,13 +946,13 @@ footer a:hover {
  
  @media (max-width: 768px) {
    .experience-container .desktop-timeline {
-     display: none !important;
+     display: block !important;
    }
    
    .experience-container .mobile-timeline {
-     display: block !important;
+     display: none !important;
      width: 100%;
-     padding: 0 10px;
+     padding: 0 8px;
      box-sizing: border-box;
    }
    
@@ -875,61 +973,90 @@ footer a:hover {
  }
   /* Experience Timeline Mobile */
   .experience-container .card {
-    width: 90% !important;
-    max-width: 90% !important;
+    width: 100% !important;
+    max-width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
 
   /* Tech badges mobile */
   .tech-badge {
-    font-size: 0.75rem;
-    padding: 3px 8px;
-    margin: 2px 4px 2px 0;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    margin: 2px 3px 2px 0;
   }
 
   /* Typography adjustments */
   h1, h2, h3 {
-    font-size: 1.8rem !important;
+    font-size: 1.6rem !important;
+    margin: 8px 0 !important;
+    padding: 0 !important;
   }
 
   h4 {
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
+    margin: 6px 0 !important;
   }
 
   p, li {
-    font-size: 0.95rem !important;
+    font-size: 0.9rem !important;
     line-height: 1.6 !important;
+    margin: 6px 0 !important;
+  }
+
+  /* Fix section headings spacing */
+  .section-heading {
+    margin: 15px 0 25px 0 !important;
+    padding: 0 8px !important;
+    text-align: left !important;
+    font-size: 2.2rem !important;
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 8px 15px;
+    padding: 8px 12px;
+    height: 55px;
   }
 
   .navbar-logo {
     font-size: 1.3rem;
   }
 
+  .home-section {
+    padding: 65px 5px 15px;
+  }
+
   .main-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .name-card {
+    padding: 10px;
+    margin-bottom: 12px;
   }
 
   .typing-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .description {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 1.7;
+    margin: 12px 0;
+    padding: 0;
   }
 
   .btn-primary,
   .btn-secondary {
-    padding: 10px 20px;
-    font-size: 0.95rem;
-    min-width: 140px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    min-width: 120px;
+    flex: 1;
+    max-width: 160px;
   }
 
   .stat-number {
@@ -940,42 +1067,74 @@ footer a:hover {
     font-size: 0.9rem;
   }
 
-  .home-section {
-    padding: 70px 15px 5px;
-  }
 
   section {
-    padding: 3px 10px;
+    padding: 12px 5px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   /* Extra small screens */
   .main-title {
-    font-size: 1.8rem !important;
+    font-size: 1.7rem !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
   }
 
   .typing-text {
-    font-size: 1.2rem !important;
-  }
-
-  h1, h2, h3 {
-    font-size: 1.5rem !important;
-  }
-
-  h4 {
     font-size: 1.1rem !important;
   }
 
+  h1, h2, h3 {
+    font-size: 1.4rem !important;
+    margin: 6px 0 !important;
+  }
+
+  h4 {
+    font-size: 1rem !important;
+    margin: 4px 0 !important;
+  }
+
   p, li {
-    font-size: 0.9rem !important;
+    font-size: 0.85rem !important;
+    margin: 4px 0 !important;
   }
 
   .card {
-    padding: 15px !important;
+    padding: 12px !important;
+    margin: 8px 0 !important;
   }
 
   .tech-badge {
-    font-size: 0.7rem;
-    padding: 2px 6px;
+    font-size: 0.65rem;
+    padding: 2px 5px;
+    margin: 1px 2px 1px 0;
+  }
+
+  /* Awards section spacing fix */
+  .awards-container {
+    padding: 0 5px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .awards-container > div {
+    gap: 8px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+  }
+
+  .awards-container .card {
+    margin: 4px !important;
+    flex: 1 1 calc(100% - 8px) !important;
+    min-width: auto !important;
+    max-width: 100% !important;
+    padding: 10px 8px !important;
+  }
+  /* Section headings for very small screens */
+  .section-heading {
+    font-size: 1.8rem !important;
+    margin: 12px 0 20px 0 !important;
   }
 }
 
@@ -983,6 +1142,7 @@ footer a:hover {
 @media (max-width: 1024px) and (min-width: 769px) {
   .home-container {
     gap: 60px;
+    padding: 0 20px;
   }
 
   .main-title {
@@ -991,5 +1151,10 @@ footer a:hover {
 
   .typing-text {
     font-size: 1.6rem;
+  }
+
+  section {
+    padding: 20px 20px;
+    max-width: 100%;
   }
 }

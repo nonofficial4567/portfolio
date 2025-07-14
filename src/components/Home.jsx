@@ -37,12 +37,12 @@ const Home = () => {
       <div className="grid-background" />
       <div className="hex-background" />
       
-       <div className="home-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+       <div className="home-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 'calc(100vh - 80px)', padding: '20px 0' }}>
         {/* Left: Name, typing, desc, buttons, social */}
         <div className="home-left">
           <div className="name-section">
             <div className="name-card">
-              <h1 className="neon-text main-title">
+              <h1 className="neon-text main-title" style={{ textAlign: 'left' }}>
                 ADITYA<br />AGGARWAL
               </h1>
               {/* Subtle glow border effect */}

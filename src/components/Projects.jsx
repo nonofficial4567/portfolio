@@ -18,8 +18,8 @@ const cardStyle = {
 
 const Projects = () => {
   return (
-    <div className="projects-container" style={{ minHeight: 'auto', padding: '5px', textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
-      <div style={sectionHeadingStyle}>
+    <div className="projects-container" style={{ minHeight: 'auto', padding: '20px', textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
+      <div style={{...sectionHeadingStyle, marginBottom: '40px'}} className="section-heading">
         {"Projects"}
       </div>
       <div
@@ -33,11 +33,7 @@ const Projects = () => {
           marginLeft: '0',
           width: '100%',
           maxWidth: '1200px',
-          boxSizing: 'border-box',
-          '@media (max-width: 768px)': {
-            flexDirection: 'column',
-            alignItems: 'center'
-          }
+          boxSizing: 'border-box'
         }}
       >
         {/* Left Project Card */}

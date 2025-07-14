@@ -12,14 +12,14 @@ const Contact = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        padding: '5px',
+        padding: '20px',
         position: 'relative',
         zIndex: 1,
         width: '100%',
         boxSizing: 'border-box'
       }}
     >
-      <div style={sectionHeadingStyle}>
+      <div style={{...sectionHeadingStyle, marginBottom: '40px'}} className="section-heading">
         {"Contact"}
       </div>
       <div style={{

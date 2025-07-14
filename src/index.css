@@ -938,7 +938,7 @@ footer a:hover {
   }
 
   /* Contact Section Mobile */
-  .contact-container > div:last-of-type {
+  .contact-container > div:nth-child(2) {
     flex-direction: column !important;
     gap: 15px !important;
     align-items: center !important;
@@ -947,14 +947,17 @@ footer a:hover {
     box-sizing: border-box;
   }
 
-  .contact-container .card,
-  .contact-container > div:last-of-type > div {
+  .contact-container > div:nth-child(2) > div {
     flex: none !important;
     min-width: auto !important;
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box;
     padding: 16px 12px !important;
+  }
+
+  .contact-container > div:nth-child(2) {
+    flex-wrap: wrap !important;
   }
 
  /* Experience Timeline Mobile */

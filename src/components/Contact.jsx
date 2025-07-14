@@ -25,7 +25,6 @@ const Contact = () => {
       <div style={{
         display: 'flex',
         gap: '40px',
-        flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'flex-start',
         width: '100%',
@@ -36,7 +35,7 @@ const Contact = () => {
       {/* Left: Send Message Card */}
       <div
         style={{
-          flex: '1 1 420px',
+          flex: '1 1 450px',
           minWidth: '300px',
           maxWidth: '500px',
           background: 'rgba(0, 20, 40, 0.95)',
@@ -82,7 +81,7 @@ const Contact = () => {
       {/* Right: Get in Touch & Socials */}
       <div
         style={{
-          flex: '1 1 420px',
+          flex: '1 1 450px',
           minWidth: '300px',
           maxWidth: '500px',
           display: 'flex',
@@ -159,12 +158,10 @@ const Contact = () => {
         {/* Terminal Card */}
         <div style={{ marginTop: '10px' }}>
           <TerminalWindow titleBarColor="green">
-            {`$ whoami
-Aditya Aggarwal
-$ status
-Available for opportunities
-$ location
-Punjab, India
+            {`$ node server.js
+Server running on port 3000
+$ npm start
+Application ready!
 `}
           </TerminalWindow>
         </div>

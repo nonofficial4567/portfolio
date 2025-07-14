@@ -68,11 +68,11 @@ const Experience = () => {
 				display: 'flex',
 				flexDirection: 'column',
 				alignItems: 'center',
-				padding: '5px',
+				padding: '20px',
 				boxSizing: 'border-box',
 			}}
 		>
-			<div style={sectionHeadingStyle}>{"Experience"}</div>
+			<div style={{...sectionHeadingStyle, marginBottom: '40px'}} className="section-heading">{"Experience"}</div>
 
 			{/* Desktop Timeline Layout */}
 			<div
@@ -299,15 +299,17 @@ const Experience = () => {
 
 			{/* Awards Section */}
 			<div
+				className="awards-container"
 				style={{
 					...sectionHeadingStyle,
 					marginTop: '20px',
-					marginBottom: '20px',
+					marginBottom: '30px',
 				}}
 			>
 				{"Awards"}
 			</div>
 			<div
+				className="awards-container"
 				style={{
 					display: 'flex',
 					gap: '20px',
@@ -316,6 +318,7 @@ const Experience = () => {
 					width: '100%',
 					maxWidth: '1200px',
 					boxSizing: 'border-box',
+					padding: '0 20px',
 				}}
 			>
 				{/* Patent Published */}

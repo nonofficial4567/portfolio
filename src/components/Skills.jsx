@@ -25,9 +25,9 @@ const Skills = () => {
   `;
 
   return (
-    <div className="skills-container" style={{ textAlign: 'center', minHeight: 'auto', padding: '5px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
+    <div className="skills-container" style={{ textAlign: 'center', minHeight: 'auto', padding: '20px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
       <div dangerouslySetInnerHTML={{ __html: certificateStyles }} />
-      <div style={sectionHeadingStyle}>
+      <div style={{...sectionHeadingStyle, marginBottom: '40px'}} className="section-heading">
               {"Skills"}
       </div>
       <div
@@ -106,7 +106,7 @@ const Skills = () => {
           <ProgressBar label="RDBMS" percentage={80} colorClass="neon-green-text" />
         </div>
       </div>
-      <div style={sectionHeadingStyle}>
+      <div style={{...sectionHeadingStyle, marginTop: '40px', marginBottom: '30px'}} className="section-heading">
               {"Certificates & Courses"}
       </div>
       <div

@@ -3,7 +3,6 @@ import { sectionHeadingStyle } from './About';
 
 const cardStyle = {
   maxWidth: '550px',
-  minHeight: 'auto',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'flex-start',
@@ -46,7 +45,7 @@ const Projects = () => {
             background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
             border: '2px solid #00ffff',
             boxShadow: '0 0 14px #00ffff33',
-            padding: '32px 32px 24px 32px'
+            padding: '24px 24px 20px 24px'
           }}
           className="project-card"
         >
@@ -88,7 +87,7 @@ const Projects = () => {
             background: 'linear-gradient(120deg, #1a002a 60%, #330033 80%, #ff00ff 120%)',
             border: '2px solid #ff00ff',
             boxShadow: '0 0 14px #ff00ff33',
-            padding: '32px 32px 24px 32px'
+            padding: '24px 24px 20px 24px'
           }}
           className="project-card"
         >

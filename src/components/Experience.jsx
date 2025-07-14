@@ -103,16 +103,16 @@ const Experience = () => {
 
 				{/* Timeline items */}
 				{timelineData.map((item, idx) => {
-					const isLeft = idx % 2 === 0;
+					const isLeft = window.innerWidth <= 768 ? false : idx % 2 === 0;
 
 					return (
 						<div
 							key={item.title}
 							style={{
 								position: 'relative',
-								marginBottom: '20px',
+								marginBottom: window.innerWidth <= 768 ? '15px' : '20px',
 								display: 'flex',
-								justifyContent: isLeft ? 'flex-start' : 'flex-end',
+								justifyContent: window.innerWidth <= 768 ? 'flex-start' : (isLeft ? 'flex-start' : 'flex-end'),
 								alignItems: 'center',
 								zIndex: 1,
 							}}
@@ -121,9 +121,9 @@ const Experience = () => {
 							<div
 								style={{
 									position: 'absolute',
-									left: '50%',
+									left: window.innerWidth <= 768 ? '20px' : '50%',
 									top: '50%',
-									transform: 'translate(-50%, -50%)',
+									transform: window.innerWidth <= 768 ? 'translate(-50%, -50%)' : 'translate(-50%, -50%)',
 									width: window.innerWidth <= 768 ? '24px' : '32px',
 									height: window.innerWidth <= 768 ? '24px' : '32px',
 									background: item.bg,
@@ -133,7 +133,7 @@ const Experience = () => {
 									display: 'flex',
 									alignItems: 'center',
 									justifyContent: 'center',
-									fontSize: window.innerWidth <= 768 ? '1rem' : '1.2rem',
+									fontSize: window.innerWidth <= 768 ? '0.9rem' : '1.2rem',
 									color: item.color,
 									zIndex: 2,
 								}}
@@ -149,15 +149,15 @@ const Experience = () => {
 									border: `2px solid ${item.border}`,
 									borderRadius: '18px',
 									boxShadow: `0 0 14px ${item.border}a0`,
-									padding: window.innerWidth <= 768 ? '8px 10px 10px 10px' : '0 14px 14px 14px',
-									width: window.innerWidth <= 768 ? '280px' : '390px',
-									maxWidth: window.innerWidth <= 768 ? '80%' : '40%',
+									padding: window.innerWidth <= 768 ? '10px 12px 12px 12px' : '16px 14px 14px 14px',
+									width: window.innerWidth <= 768 ? 'calc(100% - 50px)' : '390px',
+									maxWidth: window.innerWidth <= 768 ? 'calc(100% - 50px)' : '40%',
 									color: '#fff',
 									textAlign: 'left',
 									transition: 'transform 0.3s ease, box-shadow 0.3s ease',
 									cursor: 'pointer',
-									marginLeft: isLeft ? '0' : (window.innerWidth <= 768 ? '15px' : '30px'),
-									marginRight: isLeft ? (window.innerWidth <= 768 ? '15px' : '30px') : '0',
+									marginLeft: window.innerWidth <= 768 ? '40px' : (isLeft ? '0' : '30px'),
+									marginRight: window.innerWidth <= 768 ? '0' : (isLeft ? '30px' : '0'),
 									boxSizing: 'border-box',
 								}}
 								onMouseEnter={(e) => {
@@ -171,14 +171,15 @@ const Experience = () => {
 							>
 								<h3
 									style={{
-										fontSize: window.innerWidth <= 768 ? '1rem' : '1.2rem',
-										marginBottom: window.innerWidth <= 768 ? '2px' : '4px',
+										fontSize: window.innerWidth <= 768 ? '0.95rem' : '1.2rem',
+										marginBottom: window.innerWidth <= 768 ? '4px' : '6px',
 										color: item.color,
 										textShadow: `0 0 8px ${item.color}`,
 										fontWeight: 700,
 										display: 'flex',
 										alignItems: 'center',
-										gap: window.innerWidth <= 768 ? '6px' : '8px',
+										gap: window.innerWidth <= 768 ? '4px' : '8px',
+										lineHeight: window.innerWidth <= 768 ? '1.2' : '1.3',
 									}}
 								>
 									{item.icon} {item.title}
@@ -188,7 +189,7 @@ const Experience = () => {
 										color: item.color,
 										fontWeight: 600,
 										fontSize: window.innerWidth <= 768 ? '0.75rem' : '0.85rem',
-										marginBottom: window.innerWidth <= 768 ? '2px' : '4px',
+										marginBottom: window.innerWidth <= 768 ? '3px' : '4px',
 									}}
 								>
 									{item.date}
@@ -196,9 +197,9 @@ const Experience = () => {
 								<div
 									style={{
 										fontWeight: 700,
-										margin: window.innerWidth <= 768 ? '2px 0 6px 0' : '4px 0 8px 0',
+										margin: window.innerWidth <= 768 ? '3px 0 6px 0' : '4px 0 8px 0',
 										color: '#fff',
-										fontSize: window.innerWidth <= 768 ? '0.9rem' : '1rem',
+										fontSize: window.innerWidth <= 768 ? '0.85rem' : '1rem',
 									}}
 								>
 									{item.org}

@@ -261,6 +261,50 @@ if (typeof window !== "undefined") {
         text-align: justify !important;
       }
     }
+  /* Mobile responsive styles for About section */
+  @media (max-width: 768px) {
+    .profile-exe-title, .education-title {
+      font-size: 1.4rem !important;
+      margin-bottom: 10px !important;
+      line-height: 1.2 !important;
+      text-align: left !important;
+    }
+    .profile-exe-desc {
+      font-size: 0.95rem !important;
+      line-height: 1.5 !important;
+      text-align: left !important;
+      margin-bottom: 12px !important;
+    }
+    .about-container .card {
+      padding: 18px 16px !important;
+    }
+    .education-title {
+      margin-bottom: 12px !important;
+    }
+    .about-container .card > div {
+      font-size: 0.9rem !important;
+      line-height: 1.5 !important;
+      margin-bottom: 6px !important;
+    }
+  }
+  @media (max-width: 480px) {
+    .profile-exe-title, .education-title {
+      font-size: 1.2rem !important;
+      margin-bottom: 8px !important;
+    }
+    .profile-exe-desc {
+      font-size: 0.85rem !important;
+      line-height: 1.4 !important;
+      margin-bottom: 10px !important;
+    }
+    .about-container .card {
+      padding: 14px 12px !important;
+    }
+    .about-container .card > div {
+      font-size: 0.8rem !important;
+      margin-bottom: 4px !important;
+    }
+  }
   `;
   document.head.appendChild(style);
 }
